@@ -1,0 +1,33 @@
+#idea
+*.iml
+.idea/
+out/
+bin/
+#python
+venv/
+__pycache__
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# maven
+target/
+dependency-reduced-pom.xml
+
+# gradle
+.gradle/
+
+
+# eclipse
+.classpath
+.project
+.settings/
+bin/
+.springBeans
+.sts4-cache
+.factorypath
+.apt_generated
+.apt_generated_tests
