@@ -5,6 +5,7 @@ out/
 bin/
 #python
 venv/
+code/
 __pycache__
 *.py[cod]
 *.so

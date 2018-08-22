@@ -6,6 +6,14 @@
 + 循环语句 `{% for 条件%} ... {% endfor %}`
 + 条件语句 `{% if 条件%} ... {% endif %}`
 
+## requirement
+```
+pip install flask-sqlalchemy==2.1  
+pip install SQLAlchemy
+pip install flask-wtf
+pip install WTForms
+pip install pillow
+```
 ## refer
 - [pythondoc](http://www.pythondoc.com/)
 - [bootstrap中文](https://v4.bootcss.com/)

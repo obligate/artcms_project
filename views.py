@@ -1,8 +1,10 @@
 # coding:utf8
 import sys
+import importlib
 
-reload(sys)
-sys.setdefaultencoding("utf-8")
+importlib.reload(sys)
+# reload(sys)   # 在3.x中已经被毙掉了被替换为importlib.reload(sys)
+# sys.setdefaultencoding("utf-8")  # 这种方式在3.x中被彻底遗弃,Python 3 系统默认使用的就是utf-8编码
 
 import os
 import uuid
@@ -175,7 +177,7 @@ def codes():
     c = Codes()
     info = c.create_code()
     image = os.path.join(os.path.dirname(__file__), "static/code") + "/" + info["img_name"]
-    with open(image) as f:
+    with open(image, 'rb') as f:
         image = f.read()
     session["code"] = info["code"]
     return Response(image, mimetype="jpeg")

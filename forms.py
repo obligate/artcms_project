@@ -123,9 +123,9 @@ class RegisterForm(FlaskForm):
     # 自定义验证码验证功能
     def validate_code(self, field):
         code = field.data
-        if not session.has_key("code"):
+        if not "code" in session:  # session.has_key("code"):
             raise ValidationError(u"没有验证码！")
-        if session.has_key("code") and session["code"].lower() != code.lower():
+        if "code" in session and session["code"].lower() != code.lower():
             raise ValidationError(u"验证码不正确！")
 
 
