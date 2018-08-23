@@ -8,11 +8,13 @@
 
 ## requirement
 ```
+pip install flask
 pip install flask-sqlalchemy==2.1  
 pip install SQLAlchemy
 pip install flask-wtf
 pip install WTForms
 pip install pillow
+pip install pymysql
 ```
 ## refer
 - [pythondoc](http://www.pythondoc.com/)
